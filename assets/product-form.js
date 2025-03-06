@@ -32,9 +32,6 @@ if (!customElements.get('product-form')) {
 
         const formData = new FormData(this.form);
 
-        formData.append('properties[Category]', 'Line-item');
-
-        console.log(formData);
         if (this.cart) {
           formData.append(
             'sections',
