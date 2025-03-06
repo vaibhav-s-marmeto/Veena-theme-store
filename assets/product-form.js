@@ -34,7 +34,7 @@ if (!customElements.get('product-form')) {
 
         formData.append('properties[Category]', 'Line-item');
 
-
+        console.log(formData);
         if (this.cart) {
           formData.append(
             'sections',
