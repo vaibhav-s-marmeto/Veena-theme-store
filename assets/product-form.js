@@ -31,7 +31,7 @@ if (!customElements.get('product-form')) {
         delete config.headers['Content-Type'];
 
         const formData = new FormData(this.form);
-        formData.append('properties[Category]', 'Line-item');
+        formData.append('properties[Category]', `${this.getAttribute("data-category")}`);
    
 
         if (this.cart) {
