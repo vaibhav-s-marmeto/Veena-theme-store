@@ -1,0 +1,111 @@
+.store-locater{
+  padding:5rem 0;
+}
+.store-locater-heading{
+  color:#e85a29;
+  font-weight:600;
+}
+.store-locator--inputDiv{
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+.store-locator--inputDiv span{
+  display:flex;
+  flex-direction:column;
+  background:#ececec;
+  color:#6f7175;
+}
+.store-locator--inputDiv span select{
+  width:34rem;
+  padding:1.5rem;
+  background:#ececec;
+  color:#6f7175;
+}
+.store-locator--inputDiv span select:focus-visible {
+    outline:none;
+    outline-offset: none;
+    box-shadow: none; 
+}
+#fetchDataBtn{
+  background:#e85a29;
+  color:white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+#fetchDataBtn::after{
+  box-shadow:none;
+}
+
+
+  .store-locator-inputDiv-input {
+    position: relative;
+    display: inline-block;
+  }
+
+  .store-locator-inputDiv-input select {
+    display: block;
+    border: none; 
+    background: transparent; 
+    padding: 5px 25px 5px 5px; 
+  }
+
+  .store-locator-inputDiv-input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+  }
+.store-locator--infoDiv{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:2rem;
+  padding:4rem 0;
+}
+.store-locator--infoDiv div{
+  width:32%;
+  box-shadow: 0 0 25px rgba(208, 208, 208, .5);
+  border-radius:10px;
+}
+.store-locator--infoDiv div h2{
+  background:#e85a29;
+  color:white;
+  padding:1rem;
+  margin:0;
+  border-radius:10px 10px 0 0;
+  font-weight:600;
+}
+.store-locator--infoDiv div p{
+  padding:0 1rem;
+}
+.store-locator--infoDiv div p:nth-child(3) {
+    color:#e85a29;
+    font-size:2rem;
+    font-weight:600;
+    border-top:1px solid #6f7175;
+  }
+.store-locator--infoDiv div p:nth-child(4){
+  color:black;
+}
+.store-locator--inputDiv svg{
+  height:1rem;
+  width:1rem;
+}
+.display-none{
+  display:none;
+}
+
+@media (max-width:749px){
+  .store-locater-heading{
+    text-align:center;
+  }
+  .store-locator--inputDiv{
+    flex-direction:column;
+    gap:2rem;
+  }
+  .store-locator--infoDiv div{
+    width: 30rem;
+    margin: auto; 
+  }
+}

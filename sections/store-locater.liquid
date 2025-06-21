@@ -1,0 +1,54 @@
+{{ 'store-locater.css' | asset_url | stylesheet_tag }}
+
+<div class="store-locater page-width" style="background:{{ section.settings.background-color }}">
+  <h1 class="store-locater-heading">
+    {{ section.settings.heading }}
+  </h1>
+
+  <store-locator>
+    <div class="store-locator--inputDiv">
+      <span class="store-locator-inputDiv-input">
+        <label for="category"></label>
+
+        <select name="category" id="category"></select>
+      </span>
+      <span class="store-locator-inputDiv-input">
+        <label for="state"></label>
+        <select name="state" id="state"></select>
+      </span>
+
+      <span class="store-locator-inputDiv-input">
+        <label for="city"></label>
+        <select name="city" id="city"></select>
+      </span>
+      <button id="fetchDataBtn" class="button">Go</button>
+    </div>
+
+    <div class="store-locator--infoDiv"></div>
+    <h3 class="store-locator--message"></h3>
+  </store-locator>
+</div>
+
+{% schema %}
+{
+  "name": "store-locater",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "background-color",
+      "label": "Background color"
+    }
+  ],
+   "presets": [
+    {
+      "name": "store-locater"
+    }
+  ]
+}
+{% endschema %}

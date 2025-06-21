@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "store_locater_rjE8QK": {
+      "type": "store-locater",
+      "settings": {
+        "heading": "DEALERS",
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "store_locater_rjE8QK"
+  ]
+}
